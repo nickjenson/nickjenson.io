@@ -12,7 +12,11 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello, I am Nick Jenson.</p>
+        <h2 className={utilStyles.headingLg}>About</h2>
+        <ul className={utilStyles.list}>
+          <li>Technical Consultant for <a href="https://www.instructure.com/canvas">Canvas LMS</a> @ <a href="https://www.instructure.com/">Instructure</a>.</li>
+          <li><a href="https://github.com/nickjenson">GitHub</a> - <a href="#">LinkedIn</a> - <a href="#">Resume</a></li>
+        </ul>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
