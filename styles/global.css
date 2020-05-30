@@ -1,3 +1,9 @@
+:root {
+  --text-dark: #a8a8a8;
+  --link-dark: #249eec;
+  --background-dark: #111
+}
+
 html,
 body {
   padding: 0;
@@ -5,7 +11,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 18px
 }
 
 * {
@@ -24,4 +30,15 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+
+@media (prefers-color-scheme: dark) 
+{
+  a {
+    color: var(--link-dark)
+  }
+	body {
+    color: var(--text-dark);
+    background-color: var(--background-dark)
+	}
 }
