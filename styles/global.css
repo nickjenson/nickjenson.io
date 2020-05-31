@@ -15,7 +15,7 @@ body {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 a {
@@ -32,6 +32,24 @@ img {
   display: block
 }
 
+#navbar {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  border-bottom: solid 1px #323232;
+  margin-bottom: 1rem
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem
+}
+
 @media (prefers-color-scheme: dark) 
 {
   a {
@@ -40,5 +58,8 @@ img {
 	body {
     color: var(--text-dark);
     background-color: var(--background-dark)
+  }
+  #navbar a {
+    color: var(--text-dark)
   }
 }
