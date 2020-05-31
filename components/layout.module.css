@@ -50,3 +50,11 @@
   cursor: pointer;
   margin: 0 1rem 1rem;
 }
+
+@media (prefers-color-scheme: dark) 
+{
+  #resume {
+    color: var(--link-dark);
+    border-color: var(--link-dark)
+  }
+}

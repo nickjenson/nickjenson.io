@@ -20,7 +20,7 @@ export default function Layout({ children, home }) {
           </Link>
       )}
       <nav id="navbar">
-        <a href="#">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/nickxjenson">LinkedIn</a>
         <a href="https://github.com/nickjenson">GitHub</a>
       </nav>
         {home ? (
