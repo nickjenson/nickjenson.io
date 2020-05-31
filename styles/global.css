@@ -7,7 +7,9 @@
   --link-light: #0070f3;
   --text-light: #000;
   --background-light: #fff;
-  --border-bottom-light: #ececec
+  --border-bottom-light: #ececec;
+
+  --muted-text: #8d8d92;
 }
 
 html,
@@ -48,6 +50,7 @@ img {
   display: block;
   top: 0;
   width: 100%;
+  background-color: var(--background);
   border-bottom: solid 1px var(--border-bottom);
   margin-bottom: 1rem
 }
