@@ -20,7 +20,6 @@ export default function Layout({ children, home }) {
           </Link>
       )}
       <nav id="navbar">
-        <a href="/resume.pdf">Resume</a>
         <a href="#">LinkedIn</a>
         <a href="https://github.com/nickjenson">GitHub</a>
       </nav>
@@ -28,6 +27,7 @@ export default function Layout({ children, home }) {
           <>
             <img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name} />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <a id={styles.resume} href="/resume/nickjenson-resume.pdf">Download Resume</a>
           </>
         ) : (
           <>
