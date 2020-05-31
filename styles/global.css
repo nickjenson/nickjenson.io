@@ -1,5 +1,5 @@
 :root {
-  --text-dark: #a8a8a8;
+  --text-dark: #ececec;
   --link-dark: #249eec;
   --background-dark: #111
 }
@@ -20,16 +20,16 @@ body {
 
 a {
   color: #0070f3;
-  text-decoration: none;
+  text-decoration: none
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline
 }
 
 img {
   max-width: 100%;
-  display: block;
+  display: block
 }
 
 @media (prefers-color-scheme: dark) 
@@ -40,5 +40,5 @@ img {
 	body {
     color: var(--text-dark);
     background-color: var(--background-dark)
-	}
+  }
 }
