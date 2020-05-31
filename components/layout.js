@@ -14,7 +14,13 @@ export default function Layout({ children, home }) {
         <meta name="keywords" content="web development, design, ruby, javascript, consulting" />
       </Head>
       <header className={styles.header}>
+      {!home && (
+          <Link href="/">
+            <a className={styles.backToHome}>← Back</a>
+          </Link>
+      )}
       <nav id="navbar">
+
         <a href="/resume.pdf">Resume</a>
         <a href="#">LinkedIn</a>
         <a href="https://github.com/nickjenson">GitHub</a>
@@ -40,13 +46,6 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back</a>
-          </Link>
-        </div>
-      )}
     </div>
   )
 }

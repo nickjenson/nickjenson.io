@@ -21,8 +21,8 @@
 }
 
 .backToHome {
+  margin: .5rem;
   position: fixed;
-  left: 16px;
-  bottom: 8px;
-  margin: 3rem 0 0
+  top: 0;
+  left: 0;
 }

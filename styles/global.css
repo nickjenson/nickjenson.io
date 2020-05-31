@@ -60,6 +60,7 @@ img {
     background-color: var(--background-dark)
   }
   #navbar a {
-    color: var(--text-dark)
+    color: var(--text-dark);
+    background-color: var(--background-dark)
   }
 }
