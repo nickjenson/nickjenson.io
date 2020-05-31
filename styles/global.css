@@ -1,7 +1,7 @@
 :root {
   --text-dark: #ececec;
-  --link-dark: #0a84fe;
-  --background-dark: #000
+  --link-dark: #249eec;
+  --background-dark: #111
 }
 
 html,
@@ -63,6 +63,6 @@ img {
     background-color: var(--background-dark)
   }
   #navbar a {
-    color: var(--text-dark)
+    color: var(--text-dark);
   }
 }
