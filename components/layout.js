@@ -16,11 +16,10 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
       {!home && (
           <Link href="/">
-            <a className={styles.backToHome}>← Back</a>
+            <a className={styles.backToHome}>&larr; Back</a>
           </Link>
       )}
       <nav id="navbar">
-
         <a href="/resume.pdf">Resume</a>
         <a href="#">LinkedIn</a>
         <a href="https://github.com/nickjenson">GitHub</a>

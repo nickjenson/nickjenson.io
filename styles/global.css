@@ -42,8 +42,8 @@ img {
 }
 
 #navbar a {
-  float: right;
   display: block;
+  float: right;
   text-align: center;
   padding: 0.5rem;
   text-decoration: none;
