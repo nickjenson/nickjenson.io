@@ -51,10 +51,10 @@
   margin: 0 1rem 1rem;
 }
 
-@media (prefers-color-scheme: dark) 
+@media (prefers-color-scheme: light) 
 {
   #resume {
-    color: var(--link-dark);
-    border-color: var(--link-dark)
+    color: var(--link-light);
+    border-color: var(--link-light)
   }
 }

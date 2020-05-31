@@ -46,5 +46,5 @@
 }
 
 .lightText {
-  color: #8d8d92
+  color: var(--muted-text)
 }
