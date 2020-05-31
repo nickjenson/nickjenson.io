@@ -59,8 +59,11 @@ img {
     color: var(--text-dark);
     background-color: var(--background-dark)
   }
+  #navbar {
+    background-color: var(--background-dark)
+  }
   #navbar a {
     color: var(--text-dark);
-    background-color: var(--background-dark)
+    
   }
 }
