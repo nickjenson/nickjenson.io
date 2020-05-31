@@ -31,10 +31,10 @@
   text-decoration: none
 }
 #resume {
-  color: #249eec;
+  color: var(--link);
   background-color: transparent;
   background-image: none;
-  border: solid 1px #249eec;
+  border: solid 1px var(--link);
   display: inline-block;
   text-align: center;
   white-space: nowrap;

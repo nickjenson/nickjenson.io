@@ -1,5 +1,7 @@
 :root {
-  --text-dark: #ececec;
+  --link: #0070f3;
+
+  --text-dark: #fefefe;
   --link-dark: #249eec;
   --background-dark: #111
 }
@@ -19,7 +21,7 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: var(--link);
   text-decoration: none
 }
 
@@ -37,7 +39,7 @@ img {
   display: block;
   top: 0;
   width: 100%;
-  border-bottom: solid 1px #323232;
+  border-bottom: solid 1px #ececec;
   margin-bottom: 1rem
 }
 
@@ -45,7 +47,8 @@ img {
   display: block;
   float: right;
   text-align: center;
-  padding: 0.5rem;
+  padding: .5rem 0;
+  margin-right: .5rem;
   text-decoration: none;
   font-size: 1rem
 }
@@ -60,7 +63,8 @@ img {
     background-color: var(--background-dark)
   }
   #navbar {
-    background-color: var(--background-dark)
+    background-color: var(--background-dark);
+    border-bottom: solid 1px #2c2d2e
   }
   #navbar a {
     color: var(--text-dark);
