@@ -1,7 +1,15 @@
 :root {
-  --text-dark: #ececec;
-  --link-dark: #249eec;
-  --background-dark: #111
+  --text: #fefefe;
+  --link: #249eec;
+  --background: #111;
+  --border-bottom: #2c2d2e;
+
+  --link-light: #0070f3;
+  --text-light: #000;
+  --background-light: #fff;
+  --border-bottom-light: #ececec;
+
+  --muted-text: #8d8d92;
 }
 
 html,
@@ -14,12 +22,17 @@ body {
   font-size: 18px
 }
 
+body {
+  color: var(--text);
+  background-color: var(--background);
+}
+
 * {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 a {
-  color: #0070f3;
+  color: var(--link);
   text-decoration: none
 }
 
@@ -32,13 +45,40 @@ img {
   display: block
 }
 
-@media (prefers-color-scheme: dark) 
+#navbar {
+  position: fixed;
+  display: block;
+  top: 0;
+  width: 100%;
+  background-color: var(--background);
+  border-bottom: solid 1px var(--border-bottom);
+  margin-bottom: 1rem
+}
+
+#navbar a {
+  display: block;
+  float: right;
+  text-align: center;
+  padding: .5rem 0;
+  margin-right: .5rem;
+  text-decoration: none;
+  font-size: 1rem
+}
+
+@media (prefers-color-scheme: light) 
 {
   a {
-    color: var(--link-dark)
+    color: var(--link-light)
   }
 	body {
-    color: var(--text-dark);
-    background-color: var(--background-dark)
+    color: var(--text-light);
+    background-color: var(--background-light)
+  }
+  #navbar {
+    background-color: var(--background-light);
+    border-bottom: solid 1px var(--border-bottom-light);
+  }
+  #navbar a {
+    color: var(--text-light);
   }
 }

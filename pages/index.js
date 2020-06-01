@@ -1,9 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Date from '../components/date'
 import Layout, { name } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
 
 export default function Home({ allPostsData }) {
   return (
@@ -15,9 +15,6 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           <li>Technical Consultant for <a href="https://www.instructure.com/canvas">Canvas LMS</a> @ <a href="https://www.instructure.com/">Instructure</a>.</li>
         </ul>
-      </section>
-      <section className={utilStyles.headingMd}>
-        <a href="https://github.com/nickjenson">GitHub</a> - <a href="#">LinkedIn</a> - <a href="#">Resume</a>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
