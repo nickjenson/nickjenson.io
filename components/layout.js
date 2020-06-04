@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+import styles from '../styles/layout.module.css'
+import utils from '../styles/utils.module.css'
 
 export const name = 'Nick Jenson'
 
@@ -22,24 +22,23 @@ export default function Layout({ children, home }) {
       <nav id="navbar">
         <a href="https://www.linkedin.com/in/nickxjenson">LinkedIn</a>
         <a href="https://github.com/nickjenson">GitHub</a>
-        <a href="#">Resume</a>
       </nav>
         {home ? (
           <>
-            <img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name} />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utils.borderCircle}`} alt={name} />
+            <h1 className={utils.heading2Xl}>{name}</h1>
             <a id={styles.resume} href="/resume/nickjenson-resume.pdf">Download Resume</a>
           </>
         ) : (
           <>
             <Link href="/">
               <a>
-                <img src="/images/profile.jpg" className={`${styles.headerImage} ${utilStyles.borderCircle}`} alt={name} />
+                <img src="/images/profile.jpg" className={`${styles.headerImage} ${utils.borderCircle}`} alt={name} />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={utils.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className={utils.colorInherit}>{name}</a>
               </Link>
             </h2>
           </>

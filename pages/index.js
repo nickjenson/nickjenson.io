@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Date from '../components/date'
 import Layout, { name } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
+import utils from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
 export default function Home({ allPostsData }) {
@@ -11,21 +11,21 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{name}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <ul className={utilStyles.list}>
+      <section className={utils.headingMd}>
+        <ul className={utils.list}>
           <li>Technical Consultant for <a href="https://www.instructure.com/canvas">Canvas LMS</a> @ <a href="https://www.instructure.com/">Instructure</a>.</li>
         </ul>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
+      <section className={`${utils.headingMd} ${utils.padding1px}`}>
+        <h2 className={utils.headingLg}>Blog</h2>
+        <ul className={utils.list}>
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li className={utils.listItem} key={id}>
               <Link href="/posts/[id]" as={`/posts/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small className={utils.lightText}>
                 <Date dateString={date} />
               </small>
             </li>
