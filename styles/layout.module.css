@@ -30,6 +30,7 @@
 .backToHome:hover {
   text-decoration: none
 }
+
 #resume {
   color: var(--link);
   background-color: transparent;
