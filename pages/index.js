@@ -10,7 +10,6 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{name}</title>
-        <link rel="apple-touch-icon" href="apple-touch-icon.png"></link>
       </Head>
       <section className={utils.headingMd}>
         <ul className={utils.list}>
