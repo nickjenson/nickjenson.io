@@ -10,6 +10,7 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"></link>
         <meta name="description" content="Personal site, blog and portfolio" />
         <meta name="keywords" content="web development, design, ruby, javascript, consulting" />
       </Head>
