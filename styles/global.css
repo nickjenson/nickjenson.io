@@ -26,6 +26,14 @@ body {
   color: var(--text);
   background-color: var(--background);
 }
+.organization, .location {
+    margin-right: 8px;
+    font-size: 16px
+}
+svg > path {
+    fill: var(--text);
+    margin: 8px
+}
 
 * {
   box-sizing: border-box
@@ -76,6 +84,17 @@ img {
   margin-right: .5rem;
   text-decoration: none;
   font-size: 1rem
+}
+
+footer {
+    font-size: 80%;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background);
+    border-top: solid 1px var(--border-bottom);
+    padding: .5rem;
 }
 
 @media (prefers-color-scheme: light) 
