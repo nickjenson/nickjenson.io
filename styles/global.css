@@ -31,6 +31,18 @@ body {
   box-sizing: border-box
 }
 
+pre {
+    font-size: 90%;
+    line-height: 140%;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+    border: 1px solid var(--border-bottom);
+    border-radius: 3px;
+    padding: 8px
+} 
+
 a {
   color: var(--link);
   text-decoration: none
