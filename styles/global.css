@@ -96,6 +96,9 @@ footer {
     border-top: solid 1px var(--border-bottom);
     padding: .5rem;
 }
+footer {
+    text-align: right
+}
 
 @media (prefers-color-scheme: light) 
 {
