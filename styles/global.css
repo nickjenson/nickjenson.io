@@ -29,7 +29,6 @@ body {
   line-height: 1.6;
   font-size: 18px;
   overscroll-behavior-y: none;
-  position: fixed;
   overflow: hidden;
 }
 
