@@ -10,6 +10,14 @@
   --border-bottom-light: #ececec;
 
   --muted-text: #8d8d92;
+
+
+  --glitch-width: 100vw;
+  --glitch-height: 100vh;
+  --gap-horizontal: 10px;
+  --gap-vertical: 5px;
+  --time-anim: 4s;
+  --delay-anim: 6s
 }
 
 html,
@@ -118,40 +126,12 @@ footer {
   }
 }
 
-:root {
-    --color-text: #fff;
-    --color-bg: #000;
-    --color-link: #f9d77e;
-    --color-link-hover: #fff;
-    --color-info: #efc453;
-    --glitch-width: 100vw;
-    --glitch-height: 100vh;
-    --gap-horizontal: 10px;
-    --gap-vertical: 5px;
-    --time-anim: 4s;
-    --delay-anim: 6s;
-    --blend-mode-1: none;
-    --blend-mode-2: none;
-    --blend-mode-3: none;
-    --blend-mode-4: none;
-    --blend-mode-5: overlay;
-    --blend-color-1: transparent;
-    --blend-color-2: transparent;
-    --blend-color-3: transparent;
-    --blend-color-4: transparent;
-    --blend-color-5: #af4949;
-  }
+
   
   *,
   *::before,
   *::after {
     box-sizing: border-box;
-  }
-  
-  body {
-    background-color: var(--color-bg);
-    margin: 0;
-    padding: 0;
   }
   
   .glitch {
@@ -180,23 +160,15 @@ footer {
     animation-iteration-count: infinite;
   }
   .glitch .glitch__item:nth-child(2) {
-    background-color: var(--blend-color-2);
-    background-blend-mode: var(--blend-mode-2);
     animation-name: glitch-anim-2;
   }
   .glitch .glitch__item:nth-child(2) {
-    background-color: var(--blend-color-3);
-    background-blend-mode: var(--blend-mode-3);
     animation-name: glitch-anim-3;
   }
   .glitch .glitch__item:nth-child(4) {
-    background-color: var(--blend-color-4);
-    background-blend-mode: var(--blend-mode-4);
     animation-name: glitch-anim-4;
   }
   .glitch .glitch__item:nth-child(5) {
-    background-color: var(--blend-color-5);
-    background-blend-mode: var(--blend-mode-5);
     animation-name: glitch-anim-flash;
   }
   @keyframes glitch-anim-flash {

@@ -12,12 +12,14 @@
 
 .headerImage {
   width: 6rem;
-  height: 6rem
+  height: 6rem;
+  margin-right:-10px;
 }
 
 .headerHomeImage {
   width: 8rem;
-  height: 8rem
+  height: 8rem;
+  margin-right:-10px;
 }
 
 .backToHome {
