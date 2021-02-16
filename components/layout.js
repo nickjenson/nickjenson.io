@@ -26,8 +26,10 @@ export default function Layout({ children, home }) {
             <a href="https://github.com/nickjenson">GitHub</a>
         </nav>
             {home ? (
-            <>
-                <img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utils.borderCircle}`} alt={name} />
+            <>                
+            <div className={`${styles.headerHomeImage} ${utils.borderCircle} glitch`} alt={name}>
+                { Array.from({ length: 5 }, (_, i) => <div className="glitch__item"></div>) }
+            </div>
                 <h1 className={utils.heading2Xl}>{name}</h1>
                 <a id={styles.resume} href="/resume/nickjenson-resume.pdf">Download Resume</a>
             </>
@@ -35,7 +37,9 @@ export default function Layout({ children, home }) {
             <>
                 <Link href="/">
                 <a>
-                    <img src="/images/profile.jpg" className={`${styles.headerImage} ${utils.borderCircle}`} alt={name} />
+                <div className={`${styles.headerImage} ${utils.borderCircle} glitch`} alt={name}>
+                    { Array.from({ length: 5 }, (_, i) => <div className="glitch__item"></div>) }
+                </div>
                 </a>
                 </Link>
                 <h2 className={utils.headingLg}>
@@ -47,8 +51,13 @@ export default function Layout({ children, home }) {
             )}
         </header>
         <main>{children}</main>
+        
         </div>
-        <footer>&copy; {new Date().getFullYear()} {name}</footer>
+        <footer>&copy; {new Date().getFullYear()} {name}
+      
+        
+        
+        </footer>
     </>
 
     
